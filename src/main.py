@@ -8,8 +8,7 @@ def iniciar():
     productos = cargar_productos()
     ventas = cargar_ventas()
     while True:
-        print("
-=== TIENDAPY ===")
+        print("\n=== TIENDAPY ===")
         print("1. ver inventario")
         print("2. agregar producto")
         print("3. buscar producto")
@@ -54,8 +53,7 @@ def iniciar():
             print("error:", error)
         except (EOFError, KeyboardInterrupt):
             guardar_productos(productos)
-            print("
-saliendo")
+            print("\nsaliendo")
             break
 
 

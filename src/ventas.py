@@ -32,8 +32,7 @@ def registrar_venta(productos, ventas):
         print("venta vacia")
         return
     subtotal = 0
-    print("
-resumen de venta")
+    print("\nresumen de venta")
     for codigo, cantidad in carrito.items():
         p = productos[codigo]
         valor = p["precio"] * cantidad

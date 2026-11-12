@@ -1,11 +1,2 @@
-# tiendapy
-
-programa de consola para llevar el inventario y las ventas de la tienda don aurelio.
-
-para correrlo necesitas python 3. abre la carpeta y ejecuta:
-
-```bash
-python src/main.py
-```
-
-los productos y las ventas se guardan en la carpeta data.
+# TiendaPY
+Proyecto final para el curso de Python de 0 a 100, en el cual se desarrolla un sistema de gestión de inventarios para una tienda de barrio

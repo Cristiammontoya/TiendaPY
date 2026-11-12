@@ -8,8 +8,7 @@ def alertas(productos):
         return
     proveedores = sorted(set(p["proveedor"] for p in pendientes))
     for proveedor in proveedores:
-        print("
-proveedor:", proveedor)
+        print("\nproveedor:", proveedor)
         for p in pendientes:
             if p["proveedor"] == proveedor:
                 estado = "AGOTADO" if p["stock"] == 0 else "stock bajo"
@@ -24,8 +23,7 @@ def cierre(productos, ventas):
     for venta in del_dia:
         for codigo, cantidad in venta["productos"].items():
             conteo[codigo] = conteo.get(codigo, 0) + cantidad
-    print("
-cierre del dia:", hoy)
+    print("\ncierre del dia:", hoy)
     print(f"total vendido: ${total:,.0f}")
     print("ventas hechas:", len(del_dia))
     print(f"promedio por venta: ${total / len(del_dia) if del_dia else 0:,.0f}")
